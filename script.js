@@ -1,5 +1,5 @@
 const urls = [
-"https://warsawdog.com/en/Basenji-companion-of-the-pharaohs-with-African-roots/",
+"https://farmrio.com/products/beige-rose-shaped-bodice-sleeveless-maxi-dress?variant=41537224245341&epik=dj0yJnU9QWJwRnhiMnNxOVhGb2xiZXU4NGE2aEMzZng0amo0LVQmcD0wJm49dldVSVpVX3JUSVotT1p1eldhOEdXdyZ0PUFBQUFBR1pMN2w0",
     // Add more new URLs as needed
 ];
 
