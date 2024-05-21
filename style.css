@@ -38,11 +38,9 @@ button:hover {
 }
 
 #imageDisplay {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    background-color: #fff;
+    width: 25vw; /* 25% of the viewport width */
+    height: 25vh; /* 25% of the viewport height */
+    object-fit: cover; /* Ensures the image scales without distorting */
+    display: none; /* Ensures the image is hidden initially */
 }
+
