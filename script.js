@@ -1,5 +1,5 @@
 const urls = [
-"https://warsawdog.com/en/Basenji-companion-of-the-pharaohs-with-African-roots/"
+"https://warsawdog.com/en/Basenji-companion-of-the-pharaohs-with-African-roots/",
     // Add more new URLs as needed
 ];
 
