@@ -1,5 +1,6 @@
 const urls = [
     "https://roark.com/products/scholar-oxford-ss-woven-mens-wovens-rw648-6?variant=40582456606791",
+    "https://warsawdog.com/en/Basenji-companion-of-the-pharaohs-with-African-roots/",
     // Add more URLs as needed
 ];
 
