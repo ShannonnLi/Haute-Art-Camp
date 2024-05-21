@@ -14,11 +14,18 @@ const urls = [
 ];
 
 document.getElementById('generateButton').addEventListener('click', async () => {
+    if (urls.length === 0) {
+        alert("No more URLs to display!");
+        return;
+    }
+
     const randomIndex = Math.floor(Math.random() * urls.length);
     const randomUrl = urls[randomIndex];
     const urlDisplay = document.getElementById('urlDisplay');
     urlDisplay.innerText = randomUrl;
     urlDisplay.href = randomUrl;  // Make the URL a clickable link
+
+    document.getElementById('purchaseContainer').style.display = 'block';
 
     try {
         const imageUrl = await fetchImageUrl(randomUrl);
@@ -33,6 +40,15 @@ document.getElementById('generateButton').addEventListener('click', async () => 
     } catch (error) {
         console.error('Error fetching image:', error);
     }
+
+    document.getElementById('yesButton').onclick = () => {
+        urls.splice(randomIndex, 1);  // Remove the URL from the list
+        document.getElementById('purchaseContainer').style.display = 'none';
+        document.getElementById('urlDisplay').innerText = '';
+        document.getElementById('urlDisplay').href = '#';
+        document.getElementById('imageDisplay').style.display = 'none';
+        alert("URL removed from the list.");
+    };
 });
 
 async function fetchImageUrl(url) {
